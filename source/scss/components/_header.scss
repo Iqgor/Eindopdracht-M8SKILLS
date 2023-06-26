@@ -1,0 +1,83 @@
+@use '../abstract/mixins';
+@use '../abstract/colors';
+@use "../abstract/variables";
+
+
+.header{
+    width: 100%;
+    height: 5rem;
+    background:colors.$grey;
+    box-shadow: variables.$boxShadow;
+    padding: 0 4rem 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__title{
+        height: 100%;
+        transition: 0.2s all;
+        &:hover{
+            color: colors.$purpleColor;
+        }
+    }
+
+    &__search{
+        height: 100%;
+        @include mixins.displayFlex;
+        justify-content:initial;
+        & > i{
+            color: white;
+            background: colors.$greyLight;
+            height: 75%;
+            border-radius: 0 0.5rem 0.5rem 0;
+            padding: 0.5rem;
+            @include mixins.displayFlex;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+ 
+    }
+
+    &__inputField{
+        border: 0.125rem solid colors.$greyLight;
+        background: none;
+        height: 75%;
+        padding: 0.5rem;
+        width: 25rem;
+        border-radius: 0.5rem 0 0 0.5rem;
+        transition: 0.2s all;
+        font-weight: bold;
+        
+
+        &:focus{
+            outline: 0.25rem solid colors.$purpleColor;
+            color: white;
+            
+        }
+
+
+
+    }
+
+    &__nav{
+        height: 100%;
+        @include mixins.displayFlex;
+        height: 100%;
+        gap: 4rem;
+        font-size: 140%;
+        &  i{
+            color: white;
+            padding: 1rem 1.125rem;
+            border-radius: 50%;
+            transition: 0.2s all;
+
+            &:hover{
+                background: colors.$greyLight; 
+                color: colors.$purpleColor;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

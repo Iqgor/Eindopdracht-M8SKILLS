@@ -1,0 +1,78 @@
+{
+    "videos":[
+        {
+            "title": "Vrachtauto, politie en rechtdoor gaand verkeer!",
+            "kleininfo": "Vrachtauto, politie en rechtdoor gaand verkeer!",
+            "thumbnail": "./source/img/hqdefault.webp",
+            "datum": "21 nov 2022",
+            "video": "source/vids/vid1.mp4",
+            "id" : "0",
+            "reacties":[
+                "wat een rare gozer zeg"
+
+            ]
+        },
+        {
+            "title": "De toastjesverkoper - Sluipschutters (S5A6)",
+            "kleininfo":"Ik wil jullie iets laten proeven...<br> --- Sluipschutters is hét sketchprogramma van BNNVARA en NPO 3.",
+            "thumbnail": "./source/img/hq720 (4).webp",
+            "datum": "6 mrt 2022",
+            "video": "source/vids/vid2.mp4",
+            "id" : "1",
+            "reacties":[
+                "ik vind dit nog wel echt 1 van de beste skit"
+
+            ]
+        },
+        {
+            "title": "Peaky Blinders - Gypsy Fight Scene",
+            "kleininfo": "Peaky Blinders Episode 2.",
+            "thumbnail": "./source/img/hq720 (3).webp",
+            "datum": "24 jul 2014",
+            "video": "source/vids/vid3.mp4",
+            "id" : "2",
+            "reacties":[
+                "verekte baas","test","gave vid","Gaaf hoor" 
+
+            ]
+        },
+        {
+            "title": "Gwen Stacy Death - Real Time (No Slo-Mo)",
+            "kleininfo": "#spiderman <br>#theamazingspiderman<br>I spent 30 minutes on this, why does it have so many views?<br>Screen Rant 'll really write about anything, huh?",
+            "thumbnail": "./source/img/hq720 (2).webp",
+            "datum": "8 jun 2023",
+            "video": "source/vids/vid4.mp4",
+            "id" : "3",
+            "reacties":[
+                "so sad","wow this looks so much better"
+
+            ]
+        },
+        {
+            "title": "Insurance Fraud",
+            "kleininfo": "Description: Dashcam footage of alleged insurance fraud incident. <br>There were several people approaching from behind the vehicle instantly after the incident, driver fled due to risk of carjacking/suspecting a fraudulent claim at 3am in Browns Plains.",
+            "thumbnail": "./source/img/hq720 (1).webp",
+            "datum": "3 mei 2023",
+            "video": "source/vids/vid5.mp4",
+            "id" : "4",
+            "reacties":[
+                "what a stupid woman","why you ran away","this shit stinks"
+
+            ]
+        },
+        {
+            "title": "Kid throws rock at car",
+            "kleininfo": "",
+            "thumbnail": "./source/img/hqdefault (1).webp",
+            "datum": "25 jun 2017",
+            "video": "source/vids/vid6.mp4",
+            "id" : "5",
+            "reacties":[
+                "lol","why does the mom do nothing","where is the rest?"
+
+            ]
+        }
+    ]
+
+    
+}

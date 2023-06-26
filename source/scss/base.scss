@@ -1,0 +1,6 @@
+@use './abstract/variables';
+
+body {
+    font-family: variables.$font;
+    min-height: 100vh;
+}

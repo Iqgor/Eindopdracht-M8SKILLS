@@ -1,0 +1,222 @@
+@use '../abstract/mixins';
+@use '../abstract/colors';
+@use "../abstract/variables";
+
+.main2{
+    width: 100%;
+    
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(4,35rem) ;
+    gap: 4rem;
+
+    &__section{
+        grid-row: 1/3;
+        grid-column: 1/4;
+    }
+    &__sectionVideos{
+        grid-column: 4/5;
+        grid-row: 1/5;
+
+    }
+
+    &__container{
+        position: relative;
+        @include mixins.displayFlex;
+        width: max-content;
+        height: max-content;
+        max-width:80%;
+        height: 50rem;
+    }
+
+    &__video{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        padding: 0 4rem 0 4rem;  
+        box-shadow: variables.$boxShadow;
+        padding: 0;
+    }
+
+    &__container &__controls{
+        position: absolute;
+        bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+        opacity: 0.7;
+        transition: opacity 0.4s;
+        z-index: 1;
+    }
+
+    &__controls{
+        width: 100%;
+        gap: 1rem;
+        padding: 0 2rem 0 2rem;
+
+    }
+
+    &__container:hover &__controls{
+        opacity: 1;
+    }
+    
+    button{
+        background: none;
+        border: none;
+        & >.fa {
+            font-size: 20px !important;
+            transition: 0.2s all;
+            
+        }
+        
+        & > .fa:hover{
+            color: colors.$grey;
+            
+        }
+    }
+
+    &__container:hover &__controls button{
+        background: none;
+        color: colors.$purpleColor;
+        font-weight: bolder;
+
+
+        &:hover{
+            cursor: pointer; 
+
+        }
+    }
+
+    &__timeline{
+        flex: 1;
+        @include mixins.displayFlex;
+        justify-content: initial;
+        border: none;
+        border-radius: 1rem;
+        
+    }
+
+    &__bar{
+        background: rgb(0, 0, 0);
+        height: 4px;
+        flex: 1;
+        border-radius: 1rem;
+
+    }
+
+    &__inner{
+        background: #ccc;
+        width: 0%;
+        height: 100%;
+        border-radius: 1rem;
+
+    }
+
+    &__list{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        padding: 2rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__listItem{
+        width: 100%;
+        height: 20rem;
+        transition: 0.2s all;
+
+        & > a{
+            position: relative;
+            display: block;
+            width: 100%;
+            height:100%;
+
+            &>p{
+                position: absolute;
+                bottom: 1.25rem;
+                left: 2.5rem;
+                color:white;
+                font-weight: bold   ;
+            }
+        }
+
+        &--img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: variables.$boxShadow;
+            border-radius: 1rem;
+            padding: 0;
+        }
+        &:hover{
+            transform: scale(105%);
+            cursor: pointer;
+        }
+    }
+
+    &__com{
+        grid-column: 1/4;
+        grid-row: 3/5;
+        border-radius: 0.5rem;
+        padding-bottom: 8rem;
+    }
+
+    &__titleReaction{
+        margin-bottom: 4rem;
+        font-size: 150%;
+        color: colors.$purpleColor;
+        font-weight:500;
+    }
+
+    &__reactions{
+        width: 100%;
+        height: 90%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    &__reaction{
+        width: 80%;
+        height: 5rem;
+        box-shadow: variables.$boxShadow;
+        border-radius: 5rem;
+        @include mixins.displayFlex;
+        // padding-left:1.5rem ;
+        padding: 0;
+        flex-direction: row-reverse;
+        justify-content: start;
+        gap: 1rem;
+        &--figure{
+            width: 5rem;
+            aspect-ratio: 1/1;
+            border-radius: 2.5rem;
+            
+        }
+    }
+
+    &__inputField{
+        width: 80%;
+        height: 5rem;
+        box-shadow: variables.$boxShadow;
+        border: none;
+        padding: 2rem;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 80%;
+    }
+
+    &__button{
+        padding-left: 2rem;
+        color: black;
+        transition: 0.2s all;
+        &:hover{
+            color: colors.$purpleColor;
+            cursor: pointer;
+
+        }
+    }
+}
+

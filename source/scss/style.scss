@@ -1,0 +1,10 @@
+@use "base.scss";
+@use "./abstract/reset";
+
+@use './components/header';
+@use './components/main';
+@use './components/main2';
+
+@use './components/_footer.scss';
+
+@use './abstract/mediaqueries';
